@@ -15,6 +15,22 @@
 
   <div id="container">
     <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
+    <p>
+      Start with Ionic
+      <a
+        target="_blank"
+        rel="noopener noreferrer"
+        href="https://ionicframework.com/docs/components"
+        >UI Components</a
+      >
+    </p>
+    <ion-list>
+      <ion-item *ngFor="let item of items">
+        <ion-thumbnail slot="start"> </ion-thumbnail>
+        <ion-label>{{item.text}}</ion-label>
+      </ion-item>
+    </ion-list>
+    <ion-img src="../../assets/images/logo.png"></ion-img>
+    <img src="../../assets/images/logo.png" />
   </div>
 </ion-content>

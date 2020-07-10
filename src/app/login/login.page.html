@@ -1,0 +1,57 @@
+<!-- <ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-title>Back Button</ion-title>
+  </ion-toolbar>
+</ion-header> -->
+<ion-toolbar>
+  <ion-button class="btn btn--back" href="home" slot="start">
+    <!-- <ion-back-button defaultHref="home"> -->
+    <img src="../../assets/images/icon-back-black.png" />
+    <!-- </ion-back-button> -->
+  </ion-button>
+</ion-toolbar>
+
+<ion-content>
+  <ion-list class="login">
+    <img class="login__image" src="../../assets/images/logo.png" />
+    <ion-text class="login__title">تسجيل الدخول لحسابك</ion-text>
+
+    <ion-input
+      type="text"
+      class="input input--id"
+      placeholder="الايميل"
+    ></ion-input>
+    <ion-input
+      type="password"
+      class="input input--pass"
+      placeholder="كلمة المرور "
+    ></ion-input>
+    <ion-router-link>نسيت كلمة المرور؟</ion-router-link>
+
+    <ion-button>سجل دخولك</ion-button>
+
+    <ion-text>أو</ion-text>
+
+    <ion-list>
+      <ion-item>سجل دخول</ion-item>
+      <ion-list>
+        <ion-item>
+          <img src="../../assets/images/icon-tw-big.png" />
+        </ion-item>
+        <ion-item>
+          <img src="../../assets/images/icon-f-big.png" />
+        </ion-item>
+        <ion-item>
+          <img src="../../assets/images/icon-gg-big.png" />
+        </ion-item>
+      </ion-list>
+      <ion-text>
+        <ion-text>لا تمتلك حساب؟</ion-text>
+        <ion-router-link>أنشئ حساب جديد</ion-router-link>
+      </ion-text>
+    </ion-list>
+  </ion-list>
+</ion-content>

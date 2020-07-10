@@ -1,0 +1,29 @@
+.splash {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 190px 0 100px;
+  &__image {
+    padding-bottom: 90px;
+    width: 110px;
+    max-width: 100%;
+    display: block;
+  }
+  &__text {
+    font-family: "Tajawal", sans-serif;
+    font-size: 15px;
+    color: var(--orange);
+    margin-bottom: 15px;
+    font-weight: 500;
+  }
+  &__progress {
+    max-width: 273px;
+    height: 14px;
+    width: 100%;
+    --background: var(--gray);
+    --progress-background: var(--blue);
+    border-radius: 7px;
+  }
+}
