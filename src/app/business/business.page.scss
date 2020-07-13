@@ -1,0 +1,137 @@
+.business {
+  padding: 0 15px;
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 19px;
+  &__header {
+    padding: 0;
+    position: relative;
+    height: 154px;
+    width: 100%;
+    background: none;
+    margin-bottom: 6px;
+  }
+  &__button {
+    position: absolute;
+    left: 0;
+    top: 0;
+    margin-right: auto;
+    z-index: 9;
+  }
+  &__top {
+    background: none;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+  }
+  &__img {
+    max-width: 100%;
+    margin-bottom: 12px;
+  }
+  &__title {
+    font-size: 16px;
+    color: var(--black);
+    font-size: 500;
+    margin-bottom: 6;
+  }
+  &__desc {
+    font-size: 16px;
+    color: var(--blue);
+    font-weight: 500;
+  }
+}
+
+.content {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0;
+  &__title {
+    color: var(--orange);
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 15px;
+  }
+  &__link {
+    width: 100%;
+  }
+  &__card {
+    width: 100%;
+    margin: 0;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.08);
+    border-radius: 6px;
+    margin-bottom: 15px;
+    padding: 18px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  &__box {
+    width: 100px;
+    height: 134px;
+    padding: 30px 15px;
+    background: #f6f6f6;
+    border-radius: 6px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 20px;
+  }
+  &__image {
+    width: 71px;
+    height: 72px;
+  }
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0;
+  &__title {
+    font-size: 16px;
+    color: var(--black);
+    font-weight: 500;
+  }
+  &__desc {
+    font-size: 14px;
+    color: var(--black);
+    margin-bottom: 7px;
+  }
+  &__item {
+    display: flex;
+    padding: 0;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  &__time {
+    font-size: 16px;
+    color: var(--blue);
+    font-weight: 500;
+  }
+
+  &__icon {
+    margin-left: 10px;
+  }
+  &__phone {
+    font-size: 13px;
+    color: var(--blue);
+    font-weight: 500;
+  }
+  &__button {
+    width: 80%;
+    margin: 0 auto;
+    --border-radius: 100px;
+    --background: var(--blue);
+    color: #fff;
+    font-size: 14px;
+    --box-shadow: none;
+  }
+}

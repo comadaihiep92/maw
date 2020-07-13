@@ -38,6 +38,14 @@ const routes: Routes = [
   //     import("./tabs/tabs.module").then((m) => m.TabsPageModule),
   // },
   { path: "", loadChildren: "./tabs/tabs.module#TabsPageModule" },
+  {
+    path: 'business',
+    loadChildren: () => import('./business/business.module').then( m => m.BusinessPageModule)
+  },
+  {
+    path: 'bs-booking',
+    loadChildren: () => import('./bs-booking/bs-booking.module').then( m => m.BsBookingPageModule)
+  },
   // {
   //   path: "tab1",
   //   loadChildren: () =>

@@ -1,0 +1,13 @@
+.tab {
+  &__button {
+    background: var(--blue);
+  }
+  svg path {
+    fill: var(--gray);
+  }
+}
+.tab-selected {
+  svg path {
+    fill: #fff;
+  }
+}
