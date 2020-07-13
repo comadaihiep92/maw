@@ -1,9 +1,82 @@
-<ion-header>
+<!-- <ion-header>
   <ion-toolbar>
-    <ion-title>reg</ion-title>
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-title>Back Button</ion-title>
   </ion-toolbar>
-</ion-header>
+</ion-header> -->
+<ion-toolbar>
+  <ion-button fill="clear" class="btn btn--back" href="/home" slot="start">
+    <!-- <ion-back-button defaultHref="home"> -->
+    <img src="../../assets/images/icon-back-black.png" />
+    <!-- </ion-back-button> -->
+  </ion-button>
+</ion-toolbar>
 
 <ion-content>
+  <ion-list class="reg">
+    <ion-text class="reg__title">أنشئ حساب جديد</ion-text>
 
+    <ion-input
+      type="text"
+      class="input input--id"
+      placeholder="الايميل"
+    ></ion-input>
+    <ion-input
+      type="tel"
+      class="input input--tel"
+      placeholder="رقم الموبايل"
+    ></ion-input>
+    <ion-input
+      type="password"
+      class="input input--pass"
+      placeholder="كلمة المرور "
+    ></ion-input>
+    <ion-list class="reg__list-check">
+      <ion-checkbox mode="md" checked="true"></ion-checkbox>
+      <ion-text class="reg__forgot-text"
+        >أوافق على شروط الاستخدام وسياسة الخصوصية</ion-text
+      >
+    </ion-list>
+
+    <ion-button href="/home" class="reg__button butAct butAct-bg--blue"
+      >تسجيل</ion-button
+    >
+
+    <ion-text class="reg__or">أو</ion-text>
+
+    <ion-list class="reg__social social">
+      <ion-text class="social__title">سجل دخول</ion-text>
+      <ion-list class="social__list">
+        <ion-item lines="none" class="social__item">
+          <ion-router-link class="social__link">
+            <img
+              class="social__img"
+              src="../../assets/images/icon-tw-big.png"
+            />
+          </ion-router-link>
+        </ion-item>
+        <ion-item lines="none" class="social__item">
+          <ion-router-link class="social__link">
+            <img class="social__img" src="../../assets/images/icon-f-big.png" />
+          </ion-router-link>
+        </ion-item>
+        <ion-item lines="none" class="social__item">
+          <ion-router-link class="social__link">
+            <img
+              class="social__img"
+              src="../../assets/images/icon-gg-big.png"
+            />
+          </ion-router-link>
+        </ion-item>
+      </ion-list>
+      <ion-text>
+        <ion-text class="reg__reg">هل تمتلك حساب ؟</ion-text>
+        <ion-router-link href="/login" class="reg__sigup"
+          >سجل دخول</ion-router-link
+        >
+      </ion-text>
+    </ion-list>
+  </ion-list>
 </ion-content>

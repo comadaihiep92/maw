@@ -11,6 +11,7 @@
   --white: #ffffff;
   --orange: #dd4a07;
   --brown: #514242;
+  --line-gray: #d5d5d5;
 
   /** primary **/
   --ion-color-primary: #3880ff;
@@ -117,12 +118,20 @@
   font-weight: 900;
   font-style: bold;
 }
-
+// @font-face {
+//   font-family: "Cairo-Black";
+//   src: url("../assets/fonts/Cairo-Black.ttf");
+//   font-weight: 900;
+//   font-style: bold;
+// }
+@import url("https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;600;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Tajawal:wght@200;300;400;500;700;800;900&display=swap");
 :root,
 :root[mode="ios"],
 :root[mode="md"] {
-  --ion-font-family: "Tajawal-Regular", sans-serif !important;
-  font-family: "Tajawal-Regular", sans-serif !important;
+  --ion-font-family: "Tajawal", sans-serif !important;
+  font-family: "Tajawal", sans-serif !important;
 }
 
 @media (prefers-color-scheme: dark) {

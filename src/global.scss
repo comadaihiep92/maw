@@ -36,7 +36,7 @@
   max-height: 46px;
   width: 100%;
   border-radius: 20px;
-  border: 2px solid var(--gray);
+  border: 1px solid var(--gray);
   margin-bottom: 18px;
   padding: 13px 56px 13px 28px !important;
   position: relative;
@@ -55,8 +55,20 @@
       background: url(../src/assets/images/icon-email.png);
     }
   }
-  &--pass {
+  &--tel {
     color: var(--black);
+
+    &::after {
+      position: absolute;
+      content: "";
+      width: 20px;
+      height: 20px;
+      right: 28px;
+      background: url(../src/assets/images/icon-phone.png);
+    }
+  }
+  &--pass {
+    color: var(--text-pink);
 
     &::after {
       position: absolute;
@@ -74,5 +86,18 @@
       left: 28px;
       background: url(../src/assets/images/icon-show-pass.png);
     }
+  }
+}
+.butAct {
+  height: 46px;
+  font-size: 15px;
+  // font-family: "Open Sans", sans-serif;
+  color: #fff;
+  font-weight: 700;
+  width: 100%;
+  --border-radius: 50px;
+  text-transform: uppercase;
+  &-bg--blue {
+    --background: var(--blue);
   }
 }
