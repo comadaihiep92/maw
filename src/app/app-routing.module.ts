@@ -7,11 +7,11 @@ const routes: Routes = [
     loadChildren: () =>
       import("./splash/splash.module").then((m) => m.SplashPageModule),
   },
-  {
-    path: "home",
-    loadChildren: () =>
-      import("./home/home.module").then((m) => m.HomePageModule),
-  },
+  // {
+  //   path: "home",
+  //   loadChildren: () =>
+  //     import("./home/home.module").then((m) => m.HomePageModule),
+  // },
   {
     path: "",
     redirectTo: "login",
@@ -38,13 +38,26 @@ const routes: Routes = [
   //     import("./tabs/tabs.module").then((m) => m.TabsPageModule),
   // },
   { path: "", loadChildren: "./tabs/tabs.module#TabsPageModule" },
+  { path: "", loadChildren: "./home/home.module#HomePageModule" },
   {
-    path: 'business',
-    loadChildren: () => import('./business/business.module').then( m => m.BusinessPageModule)
+    path: "business",
+    loadChildren: () =>
+      import("./business/business.module").then((m) => m.BusinessPageModule),
   },
   {
-    path: 'bs-booking',
-    loadChildren: () => import('./bs-booking/bs-booking.module').then( m => m.BsBookingPageModule)
+    path: "bs-booking",
+    loadChildren: () =>
+      import("./bs-booking/bs-booking.module").then(
+        (m) => m.BsBookingPageModule
+      ),
+  },
+  {
+    path: 'choosedateandtime',
+    loadChildren: () => import('./choosedateandtime/choosedateandtime.module').then( m => m.ChoosedateandtimePageModule)
+  },
+  {
+    path: 'verify',
+    loadChildren: () => import('./verify/verify.module').then( m => m.VerifyPageModule)
   },
   // {
   //   path: "tab1",
