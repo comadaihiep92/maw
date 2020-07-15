@@ -1,0 +1,93 @@
+.titleBar {
+  text-align: center;
+  font-size: 22px;
+  --color: var(--black);
+}
+.account {
+  width: 100%;
+  display: flex;
+  align-items: flex-end;
+  flex-direction: column;
+  padding: 11px 15px 0 15px;
+  &__top {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 0;
+    margin-bottom: 30px;
+  }
+  &__avata {
+    width: 65px;
+    height: 65px;
+    max-width: 100%;
+  }
+  &__info {
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-right: 8px;
+  }
+  &__name {
+    font-size: 17px;
+    color: var(--black);
+    font-weight: 700;
+  }
+  &__address {
+    font-size: 13px;
+    color: var(--gray-light);
+  }
+  &__icon {
+    margin-left: 8px;
+  }
+  &__list {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0;
+  }
+  &__item {
+    width: 100%;
+    padding: 19px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    border-bottom: 1px solid var(--line-gray);
+  }
+  &__img {
+    width: 42px;
+    height: 42px;
+    display: block;
+  }
+  &__title {
+    font-family: "Cairo", sans-serif;
+    font-size: 14px;
+    margin-right: 11px;
+    color: var(--black);
+  }
+  &__button {
+    margin-right: auto;
+    height: 15px;
+    --background: none;
+    --box-shadow: none;
+    --border: unset;
+    transform: rotate(180deg);
+  }
+  &__text {
+    font-size: 13px;
+    font-family: "Cairo", sans-serif;
+    color: var(--black);
+    margin-top: 25px;
+    margin-bottom: 5px;
+    font-weight: 600;
+  }
+  &__buttonAct {
+    width: 42px;
+    height: 42px;
+    display: block;
+    --padding-end: 0;
+    --padding-start: 0;
+  }
+}

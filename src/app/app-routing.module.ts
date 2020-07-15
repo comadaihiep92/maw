@@ -52,12 +52,40 @@ const routes: Routes = [
       ),
   },
   {
-    path: 'choosedateandtime',
-    loadChildren: () => import('./choosedateandtime/choosedateandtime.module').then( m => m.ChoosedateandtimePageModule)
+    path: "choosedateandtime",
+    loadChildren: () =>
+      import("./choosedateandtime/choosedateandtime.module").then(
+        (m) => m.ChoosedateandtimePageModule
+      ),
   },
   {
-    path: 'verify',
-    loadChildren: () => import('./verify/verify.module').then( m => m.VerifyPageModule)
+    path: "verify",
+    loadChildren: () =>
+      import("./verify/verify.module").then((m) => m.VerifyPageModule),
+  },
+  {
+    path: "otp",
+    loadChildren: () => import("./otp/otp.module").then((m) => m.OtpPageModule),
+  },
+  {
+    path: "confirm",
+    loadChildren: () =>
+      import("./confirm/confirm.module").then((m) => m.ConfirmPageModule),
+  },
+  {
+    path: "popup",
+    loadChildren: () =>
+      import("./modals/popup/popup.module").then((m) => m.PopupPageModule),
+  },
+
+  {
+    path: "sorry",
+    loadChildren: () =>
+      import("./modals/sorry/sorry.module").then((m) => m.SorryPageModule),
+  },
+  {
+    path: 'account',
+    loadChildren: () => import('./account/account.module').then( m => m.AccountPageModule)
   },
   // {
   //   path: "tab1",

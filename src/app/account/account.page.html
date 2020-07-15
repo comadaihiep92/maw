@@ -1,0 +1,116 @@
+<!-- <ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-title>Back Button</ion-title>
+  </ion-toolbar>
+</ion-header> -->
+<ion-toolbar>
+  <ion-button fill="clear" class="btn btn--back" href="bs-booking" slot="start">
+    <!-- <ion-back-button defaultHref="home"> -->
+    <img src="../../assets/images/icon-back-black.png" />
+    <!-- </ion-back-button> -->
+  </ion-button>
+</ion-toolbar>
+
+<ion-content>
+  <ion-list class="choose">
+    <ion-text class="choose__title">اختر التاريخ</ion-text>
+    <ion-list class="choose__list">
+      <ion-calendar
+        class="choose__calendar"
+        [(ngModel)]="date"
+        (change)="onChange($event)"
+        [type]="type"
+        [format]="'YYYY-MM-DD'"
+        [options]="optionsBasic"
+      ></ion-calendar>
+      <img class="choose__image" src="../../assets/images/icon-calendar.png" />
+    </ion-list>
+    <ion-list class="choose__list choose__list--column">
+      <ion-text class="choose__title">اختر التاريخ</ion-text>
+      <ion-list class="choose__time">
+        <ion-radio-group class="time" value="9:30 pm">
+          <ion-list class="time__row">
+            <ion-item lines="none" class="time__col">
+              <ion-label class="time__label time__label--gray"
+                >8:30 pm</ion-label
+              >
+              <ion-radio class="time__input" value="8:30 pm"></ion-radio>
+            </ion-item>
+
+            <ion-item lines="none" class="time__col">
+              <ion-label class="time__label">8:00 pm</ion-label>
+              <ion-radio class="time__input" value="8:00 pm"></ion-radio>
+            </ion-item>
+
+            <ion-item lines="none" class="time__col">
+              <ion-label class="time__label time__label--gray"
+                >7:30 pm</ion-label
+              >
+              <ion-radio class="time__input" value="7:30 pm"></ion-radio>
+            </ion-item>
+
+            <ion-item lines="none" class="time__col">
+              <ion-label class="time__label">7:00 pm</ion-label>
+              <ion-radio class="time__input" value="7:00 pm"></ion-radio>
+            </ion-item>
+          </ion-list>
+
+          <ion-list class="time__row">
+            <ion-item lines="none" class="time__col">
+              <ion-label class="time__label">10:30 pm</ion-label>
+              <ion-radio class="time__input" value="10:30 pm"></ion-radio>
+            </ion-item>
+
+            <ion-item lines="none" class="time__col">
+              <ion-label class="time__label time__label--gray"
+                >10:00 pm</ion-label
+              >
+              <ion-radio class="time__input" value="10:00 pm"></ion-radio>
+            </ion-item>
+            <ion-item lines="none" class="time__col">
+              <ion-label class="time__label time__label--active"
+                >9:30 pm</ion-label
+              >
+              <ion-radio class="time__input" value="9:30 pm"></ion-radio>
+            </ion-item>
+
+            <ion-item lines="none" class="time__col">
+              <ion-label class="time__label time__label--gray"
+                >9:00 pm</ion-label
+              >
+              <ion-radio class="time__input" value="9:00 pm"></ion-radio>
+            </ion-item>
+          </ion-list>
+          <ion-list class="time__row">
+            <ion-item lines="none" class="time__col">
+              <ion-label class="time__label"></ion-label>
+              <ion-radio class="time__input" value="11:30 pm"></ion-radio>
+            </ion-item>
+            <ion-item lines="none" class="time__col">
+              <ion-label class="time__label"></ion-label>
+              <ion-radio class="time__input" value="11:30 pm"></ion-radio>
+            </ion-item>
+
+            <ion-item lines="none" class="time__col">
+              <ion-label class="time__label">11:30 pm</ion-label>
+              <ion-radio class="time__input" value="11:30 pm"></ion-radio>
+            </ion-item>
+
+            <ion-item lines="none" class="time__col">
+              <ion-label class="time__label">11:00 pm</ion-label>
+              <ion-radio class="time__input" value="11:00 pm"></ion-radio>
+            </ion-item>
+          </ion-list>
+        </ion-radio-group>
+      </ion-list>
+    </ion-list>
+    <ion-button
+      href="verify"
+      class="choose__button login__button butAct butAct-bg--blue"
+      >اختيار</ion-button
+    >
+  </ion-list>
+</ion-content>

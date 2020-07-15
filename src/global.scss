@@ -29,6 +29,7 @@
   --background: none;
   --box-shadow: none;
   --border: unset;
+  --background-activated: none;
 }
 
 .input {
@@ -103,4 +104,28 @@
   &-bg--blue2 {
     --background: var(--blue2);
   }
+}
+
+.myPopup {
+  --height: 54%;
+  --max-height: 100%;
+  --width: 100%;
+  align-items: flex-end;
+  & .modal-wrapper {
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+  }
+}
+
+.mySorry {
+  --height: 54%;
+  --max-height: 100%;
+  --width: 100%;
+  --background: none;
+  --backdrop-opacity: none;
+  // align-items: flex-end;
+  // & .modal-wrapper {
+  //   border-top-left-radius: 25px;
+  //   border-top-right-radius: 25px;
+  // }
 }

@@ -1,4 +1,4 @@
-.verify {
+.otp {
   width: 100%;
   display: flex;
   align-items: center;
@@ -17,22 +17,42 @@
   &__desc {
     max-width: 204px;
     font-family: "Cairo", sans-serif;
-    font-size: 16px;
+    font-size: 14px;
     line-height: 30px;
-    margin-bottom: 70px;
+    margin-bottom: 60px;
+  }
+  &__list {
+    padding: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   &__input {
-    direction: ltr;
     line-height: 38px;
-    font-size: 13px;
+    font-size: 18px;
+    font-weight: 700;
     font-family: "Roboto", sans-serif;
-    text-align: left;
-    color: var(--gray-light);
+    text-align: center;
+    color: var(--black);
+    border-bottom: 1px solid var(--gray);
+    margin: 0 10px;
+    --padding-bottom: 0;
   }
 
   &__button {
-    margin-top: 25px;
-    margin-bottom: 40px;
+    margin-top: 80px;
+    margin-bottom: 12px;
+  }
+  &__resend {
+    font-size: 14px;
+    font-family: "Cairo", sans-serif;
+    font-weight: 700;
+    color: var(--orange);
+    margin: 0;
+    text-align: right;
+    margin-right: -15.4px;
+    margin-left: auto;
   }
 }
 

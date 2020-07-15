@@ -1,9 +1,86 @@
-<ion-header>
+<!-- <ion-header>
   <ion-toolbar>
-    <ion-title>tab4</ion-title>
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-title>Back Button</ion-title>
   </ion-toolbar>
-</ion-header>
+</ion-header> -->
+<ion-toolbar>
+  <ion-title class="titleBar">حسابي</ion-title>
+  <ion-button fill="clear" class="btn btn--back" href="bs-booking" slot="start">
+    <!-- <ion-back-button defaultHref="home"> -->
+    <img src="../../assets/images/icon-back-black.png" />
+    <!-- </ion-back-button> -->
+  </ion-button>
+</ion-toolbar>
 
 <ion-content>
+  <ion-list class="account">
+    <ion-list class="account__top">
+      <ion-avata>
+        <img class="account__avata" src="../../assets/images/avata.png" />
+      </ion-avata>
+      <ion-list class="account__info">
+        <ion-text class="account__name">حنين رشاد</ion-text>
+        <ion-text class="account__address">
+          <img
+            class="account__icon"
+            src="../../assets/images/icon-address-account.png"
+          />
+          غزة, فلسطين
+        </ion-text>
+      </ion-list>
+    </ion-list>
+    <ion-list class="account__list">
+      <ion-list class="account__item">
+        <img class="account__img" src="../../assets/images/icon-person.png" />
+        <ion-text class="account__title">البيانات الشخصية</ion-text>
+        <ion-button fill="clear" class="account__button">
+          <img
+            class="content__img"
+            src="../../assets/images/icon-back-black.png"
+          />
+        </ion-button>
+      </ion-list>
+      <ion-text class="account__text">اعدادات أخرى</ion-text>
+      <ion-list class="account__item">
+        <img class="account__img" src="../../assets/images/icon-question.png" />
+        <ion-text class="account__title">اطلب المساعدة</ion-text>
+        <ion-button fill="clear" class="account__button">
+          <img
+            class="content__img"
+            src="../../assets/images/icon-back-black.png"
+          />
+        </ion-button>
+      </ion-list>
+      <ion-list class="account__item">
+        <img class="account__img" src="../../assets/images/icon-chat.png" />
+        <ion-text class="account__title">تواصل معنا</ion-text>
+        <ion-button fill="clear" class="account__button">
+          <img
+            class="content__img"
+            src="../../assets/images/icon-back-black.png"
+          />
+        </ion-button>
+      </ion-list>
+      <ion-list class="account__item">
+        <img class="account__img" src="../../assets/images/icon-doc.png" />
+        <ion-text class="account__title">شروط الخدمة</ion-text>
+        <ion-button fill="clear" class="account__button">
+          <img
+            class="content__img"
+            src="../../assets/images/icon-back-black.png"
+          />
+        </ion-button>
+      </ion-list>
 
+      <ion-list class="account__item">
+        <ion-button fill="clear" class="account__buttonAct">
+          <img class="account__img" src="../../assets/images/icon-logout.png" />
+        </ion-button>
+        <ion-text class="account__title">تسجيل خروج</ion-text>
+      </ion-list>
+    </ion-list>
+  </ion-list>
 </ion-content>

@@ -1,0 +1,42 @@
+.popup {
+  width: 100%;
+  height: 100%;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0 15px;
+  &__item {
+    display: flex;
+    align-items: center;
+    padding-top: 57px;
+    margin-bottom: 15px;
+  }
+  &__icon {
+    margin-left: 15px;
+  }
+  &__title {
+    font-size: 18px;
+    color: var(--black);
+    font-weight: 500;
+  }
+  &__list {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0;
+    margin-bottom: 40px;
+  }
+  &__checkbox {
+    --border-color: #4d4b50;
+    margin-bottom: 15px;
+    --background-checked: none;
+    --checkmark-color: #4d4b50;
+    --border-color-checked: #4d4b50;
+  }
+  &__button {
+    margin-bottom: 15px;
+  }
+}
