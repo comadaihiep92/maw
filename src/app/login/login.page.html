@@ -7,8 +7,13 @@
   </ion-toolbar>
 </ion-header> -->
 <ion-toolbar>
-  <ion-button fill="clear" class="btn btn--back" href="/home" slot="start">
-    <!-- <ion-back-button defaultHref="home"> -->
+  <ion-button
+    fill="clear"
+    class="btn btn--back"
+    routerLink="/home"
+    slot="start"
+  >
+    <!-- <ion-back-button defaultrouterLink="home"> -->
     <img src="../../assets/images/icon-back-black.png" />
     <!-- </ion-back-button> -->
   </ion-button>
@@ -29,9 +34,9 @@
       class="input input--pass"
       placeholder="كلمة المرور "
     ></ion-input>
-    <ion-router-link class="login__forgot">نسيت كلمة المرور؟</ion-router-link>
+    <a class="login__forgot">نسيت كلمة المرور؟</a>
 
-    <ion-button href="home" class="login__button butAct butAct-bg--blue"
+    <ion-button routerLink="/home" class="login__button butAct butAct-bg--blue"
       >سجل دخولك</ion-button
     >
 
@@ -41,32 +46,30 @@
       <ion-text class="social__title">سجل دخول</ion-text>
       <ion-list class="social__list">
         <ion-item lines="none" class="social__item">
-          <ion-router-link class="social__link">
+          <a class="social__link">
             <img
               class="social__img"
               src="../../assets/images/icon-tw-big.png"
             />
-          </ion-router-link>
+          </a>
         </ion-item>
         <ion-item lines="none" class="social__item">
-          <ion-router-link class="social__link">
+          <a class="social__link">
             <img class="social__img" src="../../assets/images/icon-f-big.png" />
-          </ion-router-link>
+          </a>
         </ion-item>
         <ion-item lines="none" class="social__item">
-          <ion-router-link class="social__link">
+          <a class="social__link">
             <img
               class="social__img"
               src="../../assets/images/icon-gg-big.png"
             />
-          </ion-router-link>
+          </a>
         </ion-item>
       </ion-list>
       <ion-text>
         <ion-text class="login__reg">لا تمتلك حساب؟</ion-text>
-        <ion-router-link href="/reg" class="login__sigup"
-          >أنشئ حساب جديد</ion-router-link
-        >
+        <a routerLink="/reg" class="login__sigup">أنشئ حساب جديد</a>
       </ion-text>
     </ion-list>
   </ion-list>

@@ -12,21 +12,29 @@ const routes: Routes = [
   //   loadChildren: () =>
   //     import("./home/home.module").then((m) => m.HomePageModule),
   // },
-  {
-    path: "",
-    redirectTo: "login",
-    pathMatch: "full",
-  },
+
+  // default
+  // {
+  //   path: "",
+  //   redirectTo: "login",
+  //   pathMatch: "full",
+  // },
   // {
   //   path: "",
   //   redirectTo: "home",
   //   pathMatch: "full",
   // },
   {
-    path: "login",
+    path: "",
     loadChildren: () =>
       import("./login/login.module").then((m) => m.LoginPageModule),
   },
+
+  // {
+  //   path: "login",
+  //   loadChildren: () =>
+  //     import("./login/login.module").then((m) => m.LoginPageModule),
+  // },
 
   {
     path: "reg",
@@ -84,8 +92,9 @@ const routes: Routes = [
       import("./modals/sorry/sorry.module").then((m) => m.SorryPageModule),
   },
   {
-    path: 'account',
-    loadChildren: () => import('./account/account.module').then( m => m.AccountPageModule)
+    path: "account",
+    loadChildren: () =>
+      import("./account/account.module").then((m) => m.AccountPageModule),
   },
   // {
   //   path: "tab1",

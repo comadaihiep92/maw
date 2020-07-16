@@ -7,8 +7,13 @@
   </ion-toolbar>
 </ion-header> -->
 <ion-toolbar>
-  <ion-button fill="clear" class="btn btn--back" href="bs-booking" slot="start">
-    <!-- <ion-back-button defaultHref="home"> -->
+  <ion-button
+    fill="clear"
+    class="btn btn--back"
+    routerLink="bs-booking"
+    slot="start"
+  >
+    <!-- <ion-back-button defaultrouterLink="home"> -->
     <img src="../../assets/images/icon-back-black.png" />
     <!-- </ion-back-button> -->
   </ion-button>
@@ -108,7 +113,7 @@
       </ion-list>
     </ion-list>
     <ion-button
-      href="verify"
+      routerLink="verify"
       class="choose__button login__button butAct butAct-bg--blue"
       >اختيار</ion-button
     >

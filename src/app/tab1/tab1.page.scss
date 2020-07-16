@@ -103,6 +103,9 @@
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
+  &__link {
+    text-decoration: none;
+  }
   &__item {
     // width: 133px;
     // height: 151px;

@@ -7,7 +7,7 @@
 <ion-content>
   <ion-list class="business">
     <ion-list class="business__header">
-      <ion-button href="home" class="btn btn-back-blue business__button">
+      <ion-button routerLink="/home" class="btn btn-back-blue business__button">
         <img src="../../assets/images/icon-back.png" />
       </ion-button>
       <ion-list class="business__top">
@@ -21,7 +21,7 @@
     </ion-list>
     <ion-list class="business__content content">
       <ion-text class="content__title">الأفرع</ion-text>
-      <ion-router-link class="content__link" href="bs-booking">
+      <a class="content__link" routerLink="/bs-booking">
         <ion-card class="content__card">
           <ion-list class="content__box">
             <img
@@ -51,8 +51,8 @@
             <ion-button class="info__button">حجز </ion-button>
           </ion-list>
         </ion-card>
-      </ion-router-link>
-      <ion-router-link class="content__link" href="bs-booking">
+      </a>
+      <a class="content__link" routerLink="/bs-booking">
         <ion-card class="content__card">
           <ion-list class="content__box">
             <img
@@ -82,8 +82,8 @@
             <ion-button class="info__button">حجز </ion-button>
           </ion-list>
         </ion-card>
-      </ion-router-link>
-      <ion-router-link class="content__link" href="bs-booking">
+      </a>
+      <a class="content__link" routerLink="/bs-booking">
         <ion-card class="content__card">
           <ion-list class="content__box">
             <img
@@ -113,7 +113,7 @@
             <ion-button class="info__button">حجز </ion-button>
           </ion-list>
         </ion-card>
-      </ion-router-link>
+      </a>
     </ion-list>
   </ion-list>
 </ion-content>
