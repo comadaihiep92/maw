@@ -9,52 +9,45 @@ const routes: Routes = [
     component: TabsPage,
     children: [
       {
-        path: "tab1",
+        path: "waiting",
         children: [
           {
             path: "",
-            loadChildren: "../tab1/tab1.module#Tab1PageModule",
+            loadChildren: "../waiting/waiting.module#WaitingPageModule",
           },
         ],
       },
       {
-        path: "tab2",
+        path: "sure",
         children: [
           {
             path: "",
-            loadChildren: "../tab2/tab2.module#Tab2PageModule",
+            loadChildren: "../sure/sure.module#SurePageModule",
           },
         ],
       },
       {
-        path: "tab3",
+        path: "cancel",
         children: [
           {
             path: "",
-            loadChildren: "../tab3/tab3.module#Tab3PageModule",
+            loadChildren: "../cancel/cancel.module#CancelPageModule",
           },
         ],
       },
-      {
-        path: "tab4",
-        children: [
-          {
-            path: "",
-            loadChildren: "../tab4/tab4.module#Tab4PageModule",
-          },
-        ],
-      },
+
       {
         path: "",
-        redirectTo: "/tabs/tab1",
+        redirectTo: "/tabs/waiting",
         pathMatch: "full",
       },
     ],
   },
+
   // { path: "", loadChildren: "./tabs/tabs.module#TabsPageModule" },
   {
     path: "",
-    redirectTo: "/tabs/tab1",
+    redirectTo: "/tabs/waiting",
     pathMatch: "full",
   },
 ];

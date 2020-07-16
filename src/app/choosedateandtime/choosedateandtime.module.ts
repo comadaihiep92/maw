@@ -22,7 +22,6 @@ import { CalendarModule } from "ion2-calendar";
     ChoosedateandtimePageRoutingModule,
     CalendarModule,
   ],
-  schemas: [NO_ERRORS_SCHEMA, CUSTOM_ELEMENTS_SCHEMA],
   declarations: [ChoosedateandtimePage],
 })
 export class ChoosedateandtimePageModule {}

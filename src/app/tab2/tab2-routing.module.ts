@@ -1,13 +1,13 @@
-import { NgModule } from '@angular/core';
-import { Routes, RouterModule } from '@angular/router';
+import { NgModule } from "@angular/core";
+import { Routes, RouterModule } from "@angular/router";
 
-import { Tab2Page } from './tab2.page';
+import { Tab2Page } from "./tab2.page";
 
 const routes: Routes = [
   {
-    path: '',
-    component: Tab2Page
-  }
+    path: "",
+    component: Tab2Page,
+  },
 ];
 
 @NgModule({

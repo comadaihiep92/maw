@@ -1,0 +1,53 @@
+.sorryBox {
+  --background: none;
+}
+.sure {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 11px 15px 10px 15px;
+  border-radius: 5px;
+
+  &__item {
+    width: 100%;
+    padding: 20px 10px;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.08);
+    position: relative;
+  }
+  &__image {
+    width: 42px;
+    height: 42px;
+    margin-left: 10px;
+  }
+  &__list {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  &__title {
+    font-size: 18px;
+    color: var(--fullBlack);
+    text-transform: uppercase;
+    margin-bottom: 24px;
+    font-weight: 500;
+    margin-bottom: 4px;
+  }
+  &__text {
+    font-size: 16px;
+    color: #776b6b;
+    font-weight: 500;
+    direction: ltr;
+    &--bold {
+      font-size: 15px;
+      color: var(--fullBlack);
+    }
+  }
+  &__button {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+}

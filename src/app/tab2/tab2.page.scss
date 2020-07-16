@@ -1,0 +1,30 @@
+.toolbar {
+  --background: var(--blue2);
+}
+.waiting {
+  width: 100%;
+  //   height: 100%;
+  display: flex;
+  align-items: flex-end;
+  flex-direction: column;
+  padding: 11px 15px 0 15px;
+  background: var(--blue2);
+  &__calendar {
+    padding: 0;
+    background: var(--blue2);
+  }
+
+  &__list {
+    padding: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    &--column {
+      flex-direction: column;
+    }
+  }
+  &__footer {
+    height: 50%;
+  }
+}

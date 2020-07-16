@@ -1,9 +1,56 @@
-<ion-header>
+<!-- <ion-header>
   <ion-toolbar>
-    <ion-title>tab2</ion-title>
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-title>Back Button</ion-title>
   </ion-toolbar>
-</ion-header>
+</ion-header> -->
+<ion-toolbar class="toolbar">
+  <ion-button
+    fill="clear"
+    class="btn btn--back"
+    routerLink="/bs-booking"
+    slot="start"
+  >
+    <!-- <ion-back-button defaultrouterLink="home"> -->
+    <img src="../../assets/images/back.png" />
+    <!-- </ion-back-button> -->
+  </ion-button>
+</ion-toolbar>
 
 <ion-content>
-
+  <ion-list class="waiting">
+    <ion-list class="waiting__list">
+      <ion-calendar
+        class="waiting__calendar"
+        [(ngModel)]="date"
+        (change)="onChange($event)"
+        [type]="type"
+        [format]="'YYYY-MM-DD'"
+        [options]="optionsBasic"
+      ></ion-calendar>
+    </ion-list>
+  </ion-list>
 </ion-content>
+
+<!-- <ion-footer translucent="true" class="waiting__footer">
+  <ion-list>
+    <ion-text>مواعيدي </ion-text>
+    <ion-tabs class="tab">
+      <ion-tab-bar slot="bottom">
+        <ion-tab-button class="tab__button" tab="cancel">
+          <ion-label> ملغي</ion-label>
+        </ion-tab-button>
+
+        <ion-tab-button class="tab__button" tab="sure">
+          <ion-label> مؤكد</ion-label>
+        </ion-tab-button>
+
+        <ion-tab-button class="tab__button" tab="waiting">
+          <ion-label>انتظار </ion-label>
+        </ion-tab-button>
+      </ion-tab-bar>
+    </ion-tabs>
+  </ion-list>
+</ion-footer> -->

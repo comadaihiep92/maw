@@ -14,27 +14,27 @@ const routes: Routes = [
   // },
 
   // default
-  // {
-  //   path: "",
-  //   redirectTo: "login",
-  //   pathMatch: "full",
-  // },
+  {
+    path: "",
+    redirectTo: "login",
+    pathMatch: "full",
+  },
   // {
   //   path: "",
   //   redirectTo: "home",
   //   pathMatch: "full",
   // },
-  {
-    path: "",
-    loadChildren: () =>
-      import("./login/login.module").then((m) => m.LoginPageModule),
-  },
-
   // {
-  //   path: "login",
+  //   path: "",
   //   loadChildren: () =>
   //     import("./login/login.module").then((m) => m.LoginPageModule),
   // },
+
+  {
+    path: "login",
+    loadChildren: () =>
+      import("./login/login.module").then((m) => m.LoginPageModule),
+  },
 
   {
     path: "reg",
@@ -46,7 +46,9 @@ const routes: Routes = [
   //     import("./tabs/tabs.module").then((m) => m.TabsPageModule),
   // },
   { path: "", loadChildren: "./tabs/tabs.module#TabsPageModule" },
+  // { path: "", loadChildren: "./tab2/tab2.module#Tab2PageModule" },
   { path: "", loadChildren: "./home/home.module#HomePageModule" },
+  // { path: "", loadChildren: "./tabmain/tabmain.module#TabmainPageModule" },
   {
     path: "business",
     loadChildren: () =>
@@ -96,6 +98,34 @@ const routes: Routes = [
     loadChildren: () =>
       import("./account/account.module").then((m) => m.AccountPageModule),
   },
+  // {
+  //   path: 'waiting',
+  //   loadChildren: () => import('./waiting/waiting.module').then( m => m.WaitingPageModule)
+  // },
+  // {
+  //   path: 'sure',
+  //   loadChildren: () => import('./sure/sure.module').then( m => m.SurePageModule)
+  // },
+  // {
+  //   path: 'cancel',
+  //   loadChildren: () => import('./cancel/cancel.module').then( m => m.CancelPageModule)
+  // },
+  // {
+  //   path: 'cancel',
+  //   loadChildren: () => import('./tabgr/cancel/cancel.module').then( m => m.CancelPageModule)
+  // },
+  // {
+  //   path: 'sure',
+  //   loadChildren: () => import('./tabgr/sure/sure.module').then( m => m.SurePageModule)
+  // },
+  // {
+  //   path: 'waiting',
+  //   loadChildren: () => import('./tabgr/waiting/waiting.module').then( m => m.WaitingPageModule)
+  // },
+  // {
+  //   path: 'tabmain',
+  //   loadChildren: () => import('./tabgr/tabmain/tabmain.module').then( m => m.TabmainPageModule)
+  // },
   // {
   //   path: "tab1",
   //   loadChildren: () =>

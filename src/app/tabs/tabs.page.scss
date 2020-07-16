@@ -1,13 +1,15 @@
 .tab {
+  &__label {
+    font-size: 14px;
+    color: var(--fullBlack);
+  }
   &__button {
-    background: var(--blue);
+    background: var(--white);
   }
-  svg path {
-    fill: var(--gray);
-  }
+  // svg path {
+  //   fill: var(--gray);
+  // }
 }
 .tab-selected {
-  svg path {
-    fill: #fff;
-  }
+  border-bottom: 1px solid var(--blue2);
 }
