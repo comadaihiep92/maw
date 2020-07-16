@@ -4,18 +4,17 @@ import { FormsModule } from '@angular/forms';
 
 import { IonicModule } from '@ionic/angular';
 
-import { Tab3PageRoutingModule } from './tab3-routing.module';
+import { TicketPageRoutingModule } from './ticket-routing.module';
 
-import { Tab3Page } from './tab3.page';
-import { CalendarModule } from "ion2-calendar";
+import { TicketPage } from './ticket.page';
+
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    Tab3PageRoutingModule,
-    CalendarModule,
+    TicketPageRoutingModule
   ],
-  declarations: [Tab3Page]
+  declarations: [TicketPage]
 })
-export class Tab3PageModule {}
+export class TicketPageModule {}

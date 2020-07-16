@@ -1,16 +1,16 @@
-<ion-content>
-  <ion-list class="sure">
-    <ion-list class="sure__item">
-      <img class="sure__image" src="../../assets/images/book-time.png" />
-      <ion-list class="sure__list">
-        <ion-text class="sure__title">موعد جهة نص غير معروف</ion-text>
-        <ion-text class="sure__text"
+<ion-content class="waitingne">
+  <ion-list class="waiting">
+    <ion-list class="waiting__item">
+      <img class="waiting__image" src="../../assets/images/book-time.png" />
+      <ion-list class="waiting__list">
+        <ion-text class="waiting__title">موعد جهة نص غير معروف</ion-text>
+        <ion-text class="waiting__text"
           >12 april 2020
-          <!-- <ion-text class="sure__text--bold">9:30 PM</ion-text> -->
+          <!-- <ion-text class="waiting__text--bold">9:30 PM</ion-text> -->
         </ion-text>
       </ion-list>
-      <ion-button class="btn sure__button"
-        ><img class="sure__img" src="../../assets/images/icon-close.png"
+      <ion-button (click)="presentPopover()" class="btn waiting__button"
+        ><img class="waiting__img" src="../../assets/images/icon-popover.png"
       /></ion-button>
     </ion-list>
   </ion-list>
