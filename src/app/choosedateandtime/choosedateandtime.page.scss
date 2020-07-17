@@ -52,6 +52,7 @@
     padding: 10px 0;
   }
   &__col {
+    --min-height: 26px;
     height: 26px;
     width: 62px;
     --inner-padding-end: 0;
