@@ -1,8 +1,10 @@
 .sorryBox {
   --background: none;
 }
-.sure {
+
+.waiting {
   width: 100%;
+
   display: flex;
   justify-content: center;
   padding: 11px 15px 10px 15px;
@@ -46,8 +48,11 @@
     }
   }
   &__button {
-    position: absolute;
-    top: 0;
-    left: 0;
+    // position: absolute;
+    // top: 0;
+    // left: 0;
+  }
+  &__img {
+    width: 16px;
   }
 }

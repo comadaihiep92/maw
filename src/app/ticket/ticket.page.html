@@ -1,0 +1,65 @@
+<!-- <ion-header>
+  <ion-toolbar>
+    <ion-title>ticket</ion-title>
+  </ion-toolbar>
+</ion-header> -->
+
+<ion-content>
+  <ion-list class="ticket">
+    <ion-list class="ticket__header">
+  
+        <ion-button
+ 
+          fill="clear"
+         
+          class="btn btn--back ticket__button"
+          routerLink="/bs-booking"
+          slot="start"
+        >
+          <!-- <ion-back-button defaultrouterLink="home"> -->
+          <img src="../../assets/images/icon-back-black.png" />
+          <!-- </ion-back-button> -->
+        </ion-button>
+     
+      <ion-list class="ticket__top">
+        <img class="ticket__img" src="../../assets/images/main-acticle.png" />
+        <ion-text class="ticket__title">مستشفى دار السلام </ion-text>
+
+        <!-- <ion-text class="ticket__desc"
+          ><ion-text class="ticket__desc">4 </ion-text>فروع
+        </ion-text> -->
+      </ion-list>
+    </ion-list>
+    <ion-list class="ticket__content content">
+        <ion-list class="content__top">
+          <ion-list class="content__col">
+            <ion-text class="content__title">نوع الخدمة</ion-text>
+            <ion-text class="content__text">علاج</ion-text>
+          </ion-list>
+          <ion-list class="content__col">
+            <ion-text class="content__title">رقم الحجز</ion-text>
+            <ion-text class="content__text">85687</ion-text>
+          </ion-list>
+          <ion-list class="content__col">
+            <ion-text class="content__title">تاريخ الحجز</ion-text>
+            <ion-text class="content__text content__text--dir">12 april 2020</ion-text>
+          </ion-list>
+          <ion-list class="content__col">
+            <ion-text class="content__title">وقت الحجز</ion-text>
+            <ion-text class="content__text content__text--dir">7:30 pm</ion-text>
+          </ion-list>
+        </ion-list>
+        <ion-text class="content__desc">
+          في حالة الغاء الحجز يمكنك الاتصال برقم خدمة العملاء  
+        </ion-text>
+        <a class="content__link">+9 7 0   5 7 8  6 7 5  4 7 6 8</a>
+        <ion-text class="content__line"></ion-text>
+        <img class="content__qr" src="../../assets/images/qr-code.png" />
+
+       
+    </ion-list>
+    <ion-button routerLink="/home" class="ticket__btnAct"
+    >احجز الان</ion-button
+  >
+  </ion-list>
+</ion-content>

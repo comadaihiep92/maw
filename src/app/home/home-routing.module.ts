@@ -24,6 +24,18 @@ const routes: Routes = [
             path: "",
             loadChildren: "../tab2/tab2.module#Tab2PageModule",
           },
+          {
+            path:"waiting",
+            loadChildren: "../waiting/waiting.module#WaitingPageModule"
+          },
+          {
+            path:"sure",
+            loadChildren: "../sure/sure.module#SurePageModule"
+          },
+          {
+            path:"cancel",
+            loadChildren: "../cancel/cancel.module#CancelPageModule"
+          }
         ],
       },
       {
@@ -33,6 +45,19 @@ const routes: Routes = [
             path: "",
             loadChildren: "../tab3/tab3.module#Tab3PageModule",
           },
+          
+          {
+            path:"waiting",
+            loadChildren: "../waiting/waiting.module#WaitingPageModule"
+          },
+          {
+            path:"sure",
+            loadChildren: "../sure/sure.module#SurePageModule"
+          },
+          {
+            path:"cancel",
+            loadChildren: "../cancel/cancel.module#CancelPageModule"
+          }
         ],
       },
       {

@@ -133,17 +133,17 @@
   color: #464646 !important;
 }
 
-.waiting .arrow-dropdown {
+.waiting .arrow-dropdown, .choose .arrow-dropdown {
   display: none;
 }
-.waiting .title {
+.waiting .title, .choose .title {
   display: flex;
   align-items: center;
 }
 
 .waiting .back {
   left: 0;
-  right: -75px;
+  right: -80px;
   width: 20px !important;
   height: 20px;
 
@@ -155,13 +155,36 @@
 
 .waiting .forward {
   margin-left: -40px;
-  right: 25px !important;
+  right: 42px !important;
   width: 20px !important;
   height: 20px;
   border-radius: 50%;
   min-height: 20px !important;
   color: #00a7df !important;
   background: #e6f2f5;
+}
+
+.choose .back {
+  left: 0;
+  right: -50px;
+  width: 20px !important;
+  height: 20px;
+
+  border-radius: 50%;
+  min-height: 20px !important;
+  color: #B5B5B5 !important;
+  background: #E6F2F5;
+}
+
+.choose .forward {
+  margin-left: -40px;
+  right: 10px !important;
+  width: 20px !important;
+  height: 20px;
+  border-radius: 50%;
+  min-height: 20px !important;
+  color: #B5B5B5 !important;
+  background: #E6F2F5;
 }
 
 .waiting .transparent .week-title {
@@ -181,4 +204,13 @@
 }
 .waiting .days .on-selected p {
   color: var(--blue2) !important;
+}
+
+
+.myPopover {
+  --width: 120px;
+  --height: 90px;
+  top: -227px !important;
+  left: -100px !important;
+  
 }
