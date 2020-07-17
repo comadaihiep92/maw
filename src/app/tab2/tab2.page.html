@@ -32,26 +32,28 @@
       ></ion-calendar>
     </ion-list>
   </ion-list>
+</ion-content>
 
-  <ion-list class="list">
-    <iotn-text class="text">مواعيدي </iotn-text>
+<ion-footer class="footer">
+  <ion-list class="list__tabs">
+    <ion-text class="text">مواعيدي </ion-text>
     <ion-tabs class="tab">
       <ion-tab-bar slot="top">
-        <ion-tab-button class="tab__button" tab="cancel">
-          <ion-label class="tab__label"> ملغي</ion-label>
+        <ion-tab-button class="tab__button" tab="waiting">
+          <ion-label class="tab__label">انتظار </ion-label>
         </ion-tab-button>
 
         <ion-tab-button class="tab__button" tab="sure">
           <ion-label class="tab__label"> مؤكد</ion-label>
         </ion-tab-button>
 
-        <ion-tab-button class="tab__button" tab="waiting">
-          <ion-label class="tab__label">انتظار </ion-label>
+        <ion-tab-button class="tab__button" tab="cancel">
+          <ion-label class="tab__label"> ملغي</ion-label>
         </ion-tab-button>
       </ion-tab-bar>
     </ion-tabs>
   </ion-list>
-</ion-content>
+</ion-footer>
 
 <!-- <ion-footer translucent="true" class="waiting__footer">
   <ion-list>
