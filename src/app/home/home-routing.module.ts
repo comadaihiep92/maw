@@ -17,6 +17,21 @@ const routes: Routes = [
           },
         ],
       },
+      // {
+      //   path: "waiting",
+      //   loadChildren: "../waiting/waiting.module#WaitingPageModule",
+      //   redirectTo: "/home/tab2/waiting",
+      // },
+      // {
+      //   path: "sure",
+      //   loadChildren: "../waiting/waiting.module#WaitingPageModule",
+      //   redirectTo: "/home/tab2/sure",
+      // },
+      // {
+      //   path: "cancel",
+      //   loadChildren: "../waiting/waiting.module#WaitingPageModule",
+      //   redirectTo: "/home/tab2/cancel",
+      // },
       {
         path: "tab2",
         children: [
@@ -24,20 +39,21 @@ const routes: Routes = [
             path: "",
             loadChildren: "../tab2/tab2.module#Tab2PageModule",
           },
-          {
-            path:"waiting",
-            loadChildren: "../waiting/waiting.module#WaitingPageModule"
-          },
-          {
-            path:"sure",
-            loadChildren: "../sure/sure.module#SurePageModule"
-          },
-          {
-            path:"cancel",
-            loadChildren: "../cancel/cancel.module#CancelPageModule"
-          }
+          // {
+          //   path: "waiting",
+          //   loadChildren: "../waiting/waiting.module#WaitingPageModule",
+          // },
+          // {
+          //   path: "sure",
+          //   loadChildren: "../sure/sure.module#SurePageModule",
+          // },
+          // {
+          //   path: "cancel",
+          //   loadChildren: "../cancel/cancel.module#CancelPageModule",
+          // },
         ],
       },
+
       {
         path: "tab3",
         children: [
@@ -45,19 +61,19 @@ const routes: Routes = [
             path: "",
             loadChildren: "../tab3/tab3.module#Tab3PageModule",
           },
-          
-          {
-            path:"waiting",
-            loadChildren: "../waiting/waiting.module#WaitingPageModule"
-          },
-          {
-            path:"sure",
-            loadChildren: "../sure/sure.module#SurePageModule"
-          },
-          {
-            path:"cancel",
-            loadChildren: "../cancel/cancel.module#CancelPageModule"
-          }
+
+          // {
+          //   path: "waiting",
+          //   loadChildren: "../waiting/waiting.module#WaitingPageModule",
+          // },
+          // {
+          //   path: "sure",
+          //   loadChildren: "../sure/sure.module#SurePageModule",
+          // },
+          // {
+          //   path: "cancel",
+          //   loadChildren: "../cancel/cancel.module#CancelPageModule",
+          // },
         ],
       },
       {

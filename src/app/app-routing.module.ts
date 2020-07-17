@@ -97,9 +97,11 @@ const routes: Routes = [
     path: "account",
     loadChildren: () =>
       import("./account/account.module").then((m) => m.AccountPageModule),
-  },  {
-    path: 'ticket',
-    loadChildren: () => import('./ticket/ticket.module').then( m => m.TicketPageModule)
+  },
+  {
+    path: "ticket",
+    loadChildren: () =>
+      import("./ticket/ticket.module").then((m) => m.TicketPageModule),
   },
 
   // {
