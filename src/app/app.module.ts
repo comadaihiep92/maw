@@ -13,10 +13,13 @@ import { environment } from "../environments/environment";
 
 import { LoginPage } from "../app/login/login.page";
 import { SplashPage } from "../app/splash/splash.page";
+import { CalendarModule } from 'ion2-calendar';
+
+import { FormsModule } from "@angular/forms";
+
 
 @NgModule({
   declarations: [AppComponent],
-
   imports: [
     BrowserModule,
     IonicModule.forRoot(),
@@ -24,7 +27,13 @@ import { SplashPage } from "../app/splash/splash.page";
     ServiceWorkerModule.register("ngsw-worker.js", {
       enabled: environment.production,
     }),
+    FormsModule,
     // SplashPage,
+    // CalendarModule,
+    // CalendarModule.forRoot({
+    //   doneLabel: 'Save',
+    //   closeIcon: true
+    // })
   ],
   providers: [
     StatusBar,
@@ -32,6 +41,6 @@ import { SplashPage } from "../app/splash/splash.page";
     { provide: RouteReuseStrategy, useClass: IonicRouteStrategy },
   ],
   bootstrap: [AppComponent],
-  // entryComponents: [AppComponent, LoginPage, SplashPage],
+  entryComponents: [],
 })
 export class AppModule {}

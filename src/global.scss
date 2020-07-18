@@ -30,8 +30,10 @@
   --box-shadow: none;
   --border: unset;
   --background-activated: none;
-  --padding-start: 0;
+  &--nopd {
+    --padding-start: 0;
     --padding-end: 0;
+  }
 }
 
 .input {
