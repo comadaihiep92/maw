@@ -62,9 +62,17 @@
       width: 30px;
       height: 30px;
       top: 0;
-      left: 47%;
+      left: 49%;
       z-index: 1;
     }
+  }
+  &__show {
+    position: absolute;
+    content: "";
+    width: 16px;
+    height: 11px;
+    left: 28px;
+    background: url(../../assets/images/icon-show-pass.png);
   }
   &__social {
     width: 100%;

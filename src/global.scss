@@ -30,6 +30,8 @@
   --box-shadow: none;
   --border: unset;
   --background-activated: none;
+  --padding-start: 0;
+    --padding-end: 0;
 }
 
 .input {
@@ -81,14 +83,14 @@
       right: 28px;
       background: url(../src/assets/images/icon-pass.png);
     }
-    &::before {
-      position: absolute;
-      content: "";
-      width: 16px;
-      height: 11px;
-      left: 28px;
-      background: url(../src/assets/images/icon-show-pass.png);
-    }
+    // &::before {
+    //   position: absolute;
+    //   content: "";
+    //   width: 16px;
+    //   height: 11px;
+    //   left: 28px;
+    //   background: url(../src/assets/images/icon-show-pass.png);
+    // }
   }
 }
 .butAct {
@@ -191,6 +193,54 @@
 //   color: #b5b5b5 !important;
 //   background: #e6f2f5;
 // }
+
+// .waiting .title,
+// .choose .title {
+//   display: flex;
+//   align-items: center;
+// }
+
+.waiting .back  .icon-small{
+
+  width: 20px !important;
+  height: 20px;
+
+  border-radius: 50%;
+  min-height: 20px !important;
+  color: #00a7df !important;
+  background: #e6f2f5;
+}
+
+.waiting .forward .icon-small{
+
+  width: 20px !important;
+  height: 20px;
+  border-radius: 50%;
+  min-height: 20px !important;
+  color: #00a7df !important;
+  background: #e6f2f5;
+}
+
+.choose .back .icon-small{
+
+  width: 20px !important;
+  height: 20px;
+
+  border-radius: 50%;
+  min-height: 20px !important;
+  color: #b5b5b5 !important;
+  background: #e6f2f5;
+}
+
+.choose .forward .icon-small{
+
+  width: 20px !important;
+  height: 20px;
+  border-radius: 50%;
+  min-height: 20px !important;
+  color: #b5b5b5 !important;
+  background: #e6f2f5;
+}
 
 .waiting .transparent .week-title {
   color: #696969 !important;
