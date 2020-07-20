@@ -28,6 +28,7 @@ import { FormsModule } from "@angular/forms";
     }),
     // CalendarModule,
     FormsModule,
+    ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production }),
     // SplashPage,
     // CalendarModule,
   ],

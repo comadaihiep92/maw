@@ -11,5 +11,6 @@ import { PopupPage } from "./popup.page";
 @NgModule({
   imports: [CommonModule, FormsModule, IonicModule, PopupPageRoutingModule],
   declarations: [PopupPage],
+  exports: [PopupPage],
 })
 export class PopupPageModule {}

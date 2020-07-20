@@ -14,7 +14,8 @@ import { SorryPage } from "./sorry.page";
 
 @NgModule({
   imports: [CommonModule, FormsModule, IonicModule, SorryPageRoutingModule],
-  schemas: [NO_ERRORS_SCHEMA, CUSTOM_ELEMENTS_SCHEMA],
+  // schemas: [NO_ERRORS_SCHEMA, CUSTOM_ELEMENTS_SCHEMA],
   declarations: [SorryPage],
+  exports: [SorryPage],
 })
 export class SorryPageModule {}

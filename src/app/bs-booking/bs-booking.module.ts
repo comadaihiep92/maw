@@ -8,13 +8,25 @@ import { BsBookingPageRoutingModule } from "./bs-booking-routing.module";
 
 import { BsBookingPage } from "./bs-booking.page";
 
-import { PopupPage } from "../modals/popup/popup.page";
-import { SorryPage } from "../modals/sorry/sorry.page";
+// import { PopupPage } from "../modals/popup/popup.page";
+// import { SorryPage } from "../modals/sorry/sorry.page";
+import { PopupPageModule } from "../modals/popup/popup.module";
+import { SorryPageModule } from "../modals/sorry/sorry.module";
 import { from } from "rxjs";
 
 @NgModule({
-  imports: [CommonModule, FormsModule, IonicModule, BsBookingPageRoutingModule],
-  declarations: [BsBookingPage, PopupPage, SorryPage],
-  entryComponents: [PopupPage, SorryPage],
+  imports: [
+    CommonModule,
+    FormsModule,
+    IonicModule,
+    BsBookingPageRoutingModule,
+    // PopupPage,
+    // SorryPage,
+    PopupPageModule,
+    SorryPageModule,
+  ],
+  declarations: [BsBookingPage], //, PopupPage, SorryPage
+  entryComponents: [PopupPageModule, SorryPageModule],
+  // exports: [PopupPage, SorryPage],
 })
 export class BsBookingPageModule {}
