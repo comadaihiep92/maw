@@ -45,6 +45,7 @@
   justify-content: space-between;
   align-items: center;
   direction: ltr;
+
   &__row {
     width: 100%;
     display: flex;
@@ -59,6 +60,7 @@
     width: 62px;
     --inner-padding-end: 0;
     position: relative;
+    margin: 5px;
 
     &::part(native) {
       padding: 0;
@@ -84,10 +86,9 @@
     color: var(--fullBlack);
     &--active {
       color: #fff;
-    background: var(--orange);
-    min-height: 26px;
-    min-width: 62px;
-      
+      background: var(--orange);
+      min-height: 26px;
+      min-width: 62px;
     }
     &--gray {
       color: var(--gray);
