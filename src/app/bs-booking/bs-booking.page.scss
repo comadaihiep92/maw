@@ -83,12 +83,15 @@
     justify-content: space-between;
     align-items: center;
     margin-bottom: 30px;
+    flex-wrap: wrap;
   }
   &__item {
-    width: 32%;
+    min-width: 100px;
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-bottom: 10px;
+    padding: 0;
   }
   &__img {
     margin-left: 5px;
@@ -112,7 +115,11 @@
     color: var(--black);
   }
   &__button {
-    height: 15px;
+    height: 30px;
+    width: 30px;
+    --padding-bottom: 10px;
+    --padding-end: 0;
+    --padding-start: 0;
     --background: none;
     --box-shadow: none;
     --border: unset;

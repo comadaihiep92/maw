@@ -74,6 +74,10 @@
     --box-shadow: none;
     --border: unset;
     transform: rotate(180deg);
+    --padding-start: 0;
+    --padding-end: 0;
+    height: 30px;
+    width: 30px;
   }
   &__text {
     font-size: 13px;
@@ -89,5 +93,8 @@
     display: block;
     --padding-end: 0;
     --padding-start: 0;
+  }
+  &__image {
+    min-width: 8px;
   }
 }

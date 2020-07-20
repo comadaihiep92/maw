@@ -39,12 +39,16 @@
   border-radius: 20px;
   border: 1px solid var(--gray);
   margin-bottom: 18px;
-  padding: 13px 56px 13px 28px !important;
+  // padding: 13px 56px 13px 28px !important;
   position: relative;
   font-size: 16px;
   font-weight: 600;
-  --padding-bottom: 0;
-  --padding-top: 0;
+  // --padding-bottom: 0;
+  // --padding-top: 0;
+  --padding-top: 13px;
+  --padding-start: 56px;
+  --padding-bottom: 13px;
+  --padding-end: 28px;
 
   &--id {
     color: var(--black);
@@ -190,6 +194,18 @@
 //   min-height: 20px !important;
 //   color: #b5b5b5 !important;
 //   background: #e6f2f5;
+// }
+
+// change font and size time calendar
+.choose button.days-btn {
+  width: 22px !important;
+  height: 22px !important;
+  p {
+    font-size: 12px !important;
+  }
+}
+// .choose .days .on-selected {
+
 // }
 
 .waiting .transparent .week-title {
