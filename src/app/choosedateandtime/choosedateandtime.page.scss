@@ -84,7 +84,10 @@
     color: var(--fullBlack);
     &--active {
       color: #fff;
-      background: var(--orange);
+    background: var(--orange);
+    min-height: 26px;
+    min-width: 62px;
+      
     }
     &--gray {
       color: var(--gray);

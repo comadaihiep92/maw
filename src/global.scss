@@ -30,6 +30,10 @@
   --box-shadow: none;
   --border: unset;
   --background-activated: none;
+  &--nopd {
+    --padding-start: 0;
+    --padding-end: 0;
+  }
 }
 
 .input {
@@ -85,14 +89,14 @@
       right: 28px;
       background: url(../src/assets/images/icon-pass.png);
     }
-    &::before {
-      position: absolute;
-      content: "";
-      width: 16px;
-      height: 11px;
-      left: 28px;
-      background: url(../src/assets/images/icon-show-pass.png);
-    }
+    // &::before {
+    //   position: absolute;
+    //   content: "";
+    //   width: 16px;
+    //   height: 11px;
+    //   left: 28px;
+    //   background: url(../src/assets/images/icon-show-pass.png);
+    // }
   }
 }
 .butAct {
