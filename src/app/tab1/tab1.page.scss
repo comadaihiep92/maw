@@ -29,7 +29,9 @@
     background: #fff;
     font-size: 12px;
     color: var(--black);
-    padding: 0 40px 0 40px !important;
+    // padding: 0 40px 0 40px !important;
+    --padding-start: 40px;
+    --padding-end: 40px;
     position: relative;
     width: 90%;
     border-radius: 5px;

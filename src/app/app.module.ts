@@ -13,10 +13,9 @@ import { environment } from "../environments/environment";
 
 import { LoginPage } from "../app/login/login.page";
 import { SplashPage } from "../app/splash/splash.page";
-import { CalendarModule } from 'ion2-calendar';
+import { CalendarModule } from "ion2-calendar";
 
 import { FormsModule } from "@angular/forms";
-
 
 @NgModule({
   declarations: [AppComponent],
@@ -27,13 +26,10 @@ import { FormsModule } from "@angular/forms";
     ServiceWorkerModule.register("ngsw-worker.js", {
       enabled: environment.production,
     }),
+    // CalendarModule,
     FormsModule,
     // SplashPage,
     // CalendarModule,
-    // CalendarModule.forRoot({
-    //   doneLabel: 'Save',
-    //   closeIcon: true
-    // })
   ],
   providers: [
     StatusBar,
